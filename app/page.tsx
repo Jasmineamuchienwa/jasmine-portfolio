@@ -65,17 +65,16 @@ export default function Page() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center gap-2 text-xs font-medium rounded-full border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5 px-3 py-1">
               <Sparkles className="h-4 w-4 text-fuchsia-600" />
-              <span>Student • Cyber Defense • MMU Manchester</span>
+              <span>Student • Cyber Defense • Manchester</span>
             </div>
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I’m Jasmine — I build cute, serious
-              <span className="text-fuchsia-600"> defensive tools</span> &
-              <span className="text-indigo-600"> clean UIs</span>.
+              Hi, I’m Jasmine, Welcome to my living portfolio.
+              <span className="text-fuchsia-600"> defensive tools</span> ,
+              <span className="text-indigo-600"> clean UIs & what i develop next</span>.
             </h1>
             <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
-              Nigerian international student in the UK (MMU). I focus on phishing detection, privacy-aware design,
-              and beginner-friendly tools that actually work. This site is a home for my projects, writing,
-              and experiments.
+               Cybersecurity student focused on phishing, privacy, and defense etc.
+            I aim to build small, sharp tools that protect people and challenge how security feels; simple, human, and useful..
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 text-white px-4 py-2 shadow hover:shadow-md">
@@ -97,9 +96,7 @@ export default function Page() {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="md:col-span-2">
             <p className="text-sm leading-7">
-              I’m a cybersecurity student with a defensive focus: phishing, web application security, malware analysis,
-              and privacy-first thinking. I like building small, useful tools that are easy to run and easy to explain.
-              I’m also big on UI/UX — if security isn’t understandable, people won’t use it.
+              I’m a cybersecurity student focused on defense. This site is where I test ideas, learn in public, and build my understanding one project at a time. I want security to feel simple!
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((s) => (<TAG key={s} text={s} />))}
@@ -121,7 +118,7 @@ export default function Page() {
               <Globe2 className="h-5 w-5 text-fuchsia-600" />
               <div>
                 <p className="font-medium">Identity</p>
-                <p className="text-sm opacity-90 mt-1">Nigerian in Manchester. Building useful, ethical, and human-centered security tools.</p>
+                <p className="text-sm opacity-90 mt-1">Student. Building useful, ethical, and human-centered security tools.</p>
               </div>
             </div>
           </Card>
@@ -156,8 +153,8 @@ export default function Page() {
             <div className="flex items-start gap-3">
               <FolderPlus className="h-5 w-5 text-indigo-600" />
               <div>
-                <h3 className="text-lg font-semibold">Add a new mini-project</h3>
-                <p className="mt-1 text-sm opacity-90">Space reserved for future tools, write-ups, and experiments. Duplicate this card and update the array.</p>
+                <h3 className="text-lg font-semibold">Pending new mini-project</h3>
+                <p className="mt-1 text-sm opacity-90">Space reserved for future tools, write-ups, or experiments. </p>
               </div>
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -227,7 +224,7 @@ export default function Page() {
       <Section id="contact" title="Let’s connect" eyebrow="contact">
         <div className="grid md:grid-cols-3 gap-6">
           <Card>
-            <p className="text-sm">Open to internships, collaborations, and mentorship. If you like my vibe, reach out.</p>
+            <p className="text-sm">Open to internships, conversation and learning. Reach out via links below.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="mailto:phillipsfareedah@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2">
                 <Mail className="h-4 w-4" /> Email me
@@ -241,8 +238,8 @@ export default function Page() {
             </div>
           </Card>
           <Card className="md:col-span-2">
-            <p className="text-sm font-medium mb-2">Quick elevator pitch</p>
-            <p className="text-sm opacity-90">I’m building a portfolio of small, practical security tools that anyone can run locally. I love pretty UIs, clear writing, and real-world impact. My current focus is phishing detection and privacy-aware patterns for Nigerian and global users.</p>
+            <p className="text-sm font-medium mb-2">What is it for?</p>
+            <p className="text-sm opacity-90">I’m a cybersecurity student building small tools that could protect and inform people. This site is my lab, it’ll change as I learn.</p>
           </Card>
         </div>
       </Section>
