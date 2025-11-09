@@ -1,6 +1,6 @@
 # 🛡️ Jasmine — Portfolio (Next.js + Tailwind)
 
-Cute-but-serious cybersecurity portfolio. Includes projects, case studies, and writing.
+cybersecurity portfolio. Includes projects, case studies, and writing.
 
 ## Quickstart
 ```bash
