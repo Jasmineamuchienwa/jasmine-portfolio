@@ -177,7 +177,7 @@ export default function Page() {
             </a>
           </Card>
           <Card>
-            <h3 className="text-lg font-semibold">Designing cute but serious security UIs</h3>
+            <h3 className="text-lg font-semibold">Designing security UIs</h3>
             <p className="mt-2 text-sm opacity-90">Balancing clarity, color, and trust. Small patterns that reduce user mistakes in phishing-prone moments.</p>
             <a href="#" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
               Read case study <ExternalLink className="h-4 w-4" />
@@ -194,7 +194,7 @@ export default function Page() {
               <BookOpen className="h-5 w-5 text-indigo-600" />
               <div>
                 <p className="font-medium">On phishing patterns I see around me</p>
-                <p className="text-sm opacity-90 mt-1">Short notes on social engineering cues, Nigerian-context lures, and how UI/design can help users spot danger.</p>
+                <p className="text-sm opacity-90 mt-1">Short notes on social engineering cues, context lures, and how UI/design can help users spot danger.</p>
               </div>
             </div>
             <div className="mt-3">
@@ -207,8 +207,8 @@ export default function Page() {
             <div className="flex items-start gap-3">
               <BookOpen className="h-5 w-5 text-fuchsia-600" />
               <div>
-                <p className="font-medium">Designing cute but serious security</p>
-                <p className="text-sm opacity-90 mt-1">Blending empathy, clarity, and color with defensive tools so people actually use them.</p>
+                <p className="font-medium">Designing Visual Security Systems</p>
+                <p className="text-sm opacity-90 mt-1">Blending clarity, and color with defensive tools so people actually use them.</p>
               </div>
             </div>
             <div className="mt-3">
