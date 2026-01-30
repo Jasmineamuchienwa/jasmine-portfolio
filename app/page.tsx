@@ -169,7 +169,7 @@ export default function Page() {
             <div className="flex items-start gap-3">
               <FolderPlus className="h-5 w-5 text-indigo-600" />
               <div>
-                <h3 className="text-lg font-semibold">Pending new mini-project</h3>
+                <h3 className="text-lg font-semibold">Pending new mini project</h3>
                 <p className="mt-1 text-sm opacity-90">Space reserved for future tools, write-ups, or experiments. </p>
               </div>
             </div>
