@@ -10,8 +10,18 @@ import { TAG } from "@/components/ui/Tag";
 import { useEffect } from "react";
 
 const skills = [
-  "Python", "Java", "PHP", "Web App Security", "Malware Analysis", "Phishing Detection", "Privacy/Data Protection", "Scikit-learn", "Pandas", "Flask", "Git/GitHub"
+  "Python",
+  "FastAPI",
+  "JWT Auth",
+  "Role-Based Access Control (RBAC)",
+  "Audit Logging",
+  "SQL / SQLAlchemy",
+  "Secure API Design",
+  "Threat Modeling",
+  "Web App Security",
+  "Git/GitHub"
 ];
+
 
 export default function Page() {
   useEffect(() => {
@@ -68,21 +78,25 @@ export default function Page() {
               <span>Student • Cyber Defense • Manchester</span>
             </div>
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I’m Jasmine, Welcome to my living portfolio.
-              <span className="text-fuchsia-600"> defensive tools</span> ,
-              <span className="text-indigo-600"> clean UIs & what i develop next</span>.
+              Hi, I’m Jasmine — I build security-first systems.
+              <span className="text-fuchsia-600"> clean access control</span>,
+             <span className="text-indigo-600"> audit-ready APIs</span>, and practical defense tooling.
             </h1>
-            <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
-               Cybersecurity student focused on phishing, privacy, and defense etc.
-            I aim to build small, sharp tools that protect people and challenge how security feels; simple, human, and useful..
+
+           <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
+              Cybersecurity student focused on building projects that prove real-world risk thinking:
+             authentication, role separation, audit trails, and secure transaction flows.
+            Everything here is designed to be easy for recruiters to review.
             </p>
+
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-fuchsia-600 text-white px-4 py-2 shadow hover:shadow-md">
                 View Projects <ArrowRight className="h-4 w-4" />
               </a>
-              <Link href="https://github.com/Jasmineamuchienwa/naira-sentinel" target="_blank" className="inline-flex items-center gap-2 rounded-full border px-4 py-2 hover:bg-white/60 dark:hover:bg-white/10">
-                Naira Sentinel <ExternalLink className="h-4 w-4" />
-              </Link>
+              <Link href="https://github.com/Jasmineamuchienwa" target="_blank" className="inline-flex items-center gap-2 rounded-full border px-4 py-2 hover:bg-white/60 dark:hover:bg-white/10">
+                View GitHub <ExternalLink className="h-4 w-4" />
+                </Link>
+
             </div>
             <div className="mt-6 flex flex-wrap gap-2">
               {skills.slice(0,8).map((s) => (<TAG key={s} text={s} />))}
@@ -168,23 +182,30 @@ export default function Page() {
 
       {/* CASE STUDIES */}
       <Section id="case-studies" title="Case Studies" eyebrow="deep dives">
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card>
-            <h3 className="text-lg font-semibold">Naira Sentinel — From idea to CLI</h3>
-            <p className="mt-2 text-sm opacity-90">Problem → approach → results. Synthetic data generation, TF-IDF features, threshold tuning, and limitations. Includes code snippets and screenshots.</p>
-            <a href="#" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-              Read case study <ExternalLink className="h-4 w-4" />
-            </a>
-          </Card>
-          <Card>
-            <h3 className="text-lg font-semibold">Designing security UIs</h3>
-            <p className="mt-2 text-sm opacity-90">Balancing clarity, color, and trust. Small patterns that reduce user mistakes in phishing-prone moments.</p>
-            <a href="#" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-              Read case study <ExternalLink className="h-4 w-4" />
-            </a>
-          </Card>
-        </div>
-      </Section>
+  <div className="grid md:grid-cols-2 gap-6">
+    <Card>
+      <h3 className="text-lg font-semibold">Northbridge Secure Banking MVP — Risk-backed build</h3>
+      <p className="mt-2 text-sm opacity-90">
+        A fintech-style API designed around enterprise risk thinking: authentication, RBAC, audit logs, and transaction integrity.
+        Built to align with an Enterprise Technology Risk Assessment.
+      </p>
+      <a href="#projects" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
+        See project details <ArrowRight className="h-4 w-4" />
+      </a>
+    </Card>
+
+    <Card>
+      <h3 className="text-lg font-semibold">Security UI notes — Designing for fewer mistakes</h3>
+      <p className="mt-2 text-sm opacity-90">
+        Short write-ups on how wording, friction, and feedback reduce phishing mistakes and improve user decisions in high-risk moments.
+      </p>
+      <a href="#writing" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
+        See writing <ArrowRight className="h-4 w-4" />
+      </a>
+    </Card>
+  </div>
+</Section>
+
 
       {/* WRITING */}
       <Section id="writing" title="Writing & Notes" eyebrow="essays">
