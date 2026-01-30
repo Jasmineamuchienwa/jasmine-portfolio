@@ -12,7 +12,7 @@ export const projects = [
     description:
       "A browser extension concept focused on phishing awareness and user-safe security feedback. Designed around clarity, scan limits, and activation flows to reduce risky browsing behaviour.",
     tags: ["Web Security", "UX", "Threat Awareness", "Extension"],
-    link: "https://github.com/YOUR_USERNAME/scamspotter",
+    link: "https://github.com/Jasmineamuchienwa/scamspotter-extension",
   },
 
   {

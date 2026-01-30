@@ -229,7 +229,7 @@ export default function Page() {
               <BookOpen className="h-5 w-5 text-fuchsia-600" />
               <div>
                 <p className="font-medium">Designing Visual Security Systems</p>
-                <p className="text-sm opacity-90 mt-1">Blending clarity, and color with defensive tools so people actually use them.</p>
+                <p className="text-sm opacity-90 mt-1">Student projects - All of my projects as a catalogue to access easily via github. .</p>
               </div>
             </div>
             <div className="mt-3">
@@ -245,7 +245,7 @@ export default function Page() {
       <Section id="contact" title="Let’s connect" eyebrow="contact">
         <div className="grid md:grid-cols-3 gap-6">
           <Card>
-            <p className="text-sm">Open to internships, conversation and learning. Reach out via links below.</p>
+            <p className="text-sm">Open to internships. Reach out via links below.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="mailto:phillipsfareedah@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2">
                 <Mail className="h-4 w-4" /> Email me
