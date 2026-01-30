@@ -20,7 +20,7 @@ export const projects = [
     description:
       "A concept project exploring detection of suspicious internal access patterns and explainable security signals rather than black-box scoring.",
     tags: ["IAM", "Insider Threat", "Detection", "Security Engineering"],
-    link: "https://github.com/YOUR_USERNAME/shadowaccess",
+    link: "https://github.com/Jasmineamuchienwa/shadowaccess.git",
   },
 
   {

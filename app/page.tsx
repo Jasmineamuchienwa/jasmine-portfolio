@@ -78,13 +78,13 @@ export default function Page() {
             </div>
 
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I’m Jasmine{" "}
-              <span className="text-fuchsia-600">clean access control</span>,{" "}
-              <span className="text-indigo-600">audit-ready APIs</span>, and practical defense tooling.
+              Hi, I’m Jasmine,{" "}
+              <span className="text-fuchsia-600">Welcome</span>.{" "}
+              <span className="text-indigo-600"></span>
             </h1>
 
             <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
-              Cybersecurity student trying to build practical projects around authentication, RBAC,
+              Cybersecurity student trying to build practical projects around areas of cybersecurity such as authentication, RBAC,
               audit trails, and secure transaction flows. Everything here is easy to review quickly.
             </p>
 
@@ -109,8 +109,8 @@ export default function Page() {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="md:col-span-2">
             <p className="text-sm leading-7">
-              I’m a cybersecurity student. This site is where I test ideas, learn in public,
-              and build my understanding one project at a time.
+              I am a cybersecurity student learning through hands-on projects and experiments.
+                Outside of tech, I write personal pieces on Substack.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((s) => (<TAG key={s} text={s} />))}
@@ -216,7 +216,7 @@ export default function Page() {
             <div>
               <p className="font-medium">Substack</p>
               <p className="text-sm opacity-90 mt-1">
-                Personal writing — essays, reflections, and observations.
+                Personal writing - essays, reflections, and observations.
               </p>
             </div>
           </div>
