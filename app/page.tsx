@@ -78,13 +78,13 @@ export default function Page() {
             </div>
 
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I’m Jasmine. I build{" "}
+              Hi, I’m Jasmine{" "}
               <span className="text-fuchsia-600">clean access control</span>,{" "}
               <span className="text-indigo-600">audit-ready APIs</span>, and practical defense tooling.
             </h1>
 
             <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
-              Cybersecurity student building practical projects around authentication, RBAC,
+              Cybersecurity student trying to build practical projects around authentication, RBAC,
               audit trails, and secure transaction flows. Everything here is easy to review quickly.
             </p>
 
