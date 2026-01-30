@@ -22,7 +22,6 @@ const skills = [
   "Git/GitHub"
 ];
 
-
 export default function Page() {
   useEffect(() => {
     const saved = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
@@ -77,16 +76,16 @@ export default function Page() {
               <Sparkles className="h-4 w-4 text-fuchsia-600" />
               <span>Student • Cyber Defense • Manchester</span>
             </div>
+
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I’m Jasmine — I build security-first systems.
-              <span className="text-fuchsia-600"> clean access control</span>,
-             <span className="text-indigo-600"> audit-ready APIs</span>, and practical defense tooling.
+              Hi, I’m Jasmine. I build{" "}
+              <span className="text-fuchsia-600">clean access control</span>,{" "}
+              <span className="text-indigo-600">audit-ready APIs</span>, and practical defense tooling.
             </h1>
 
-           <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
-              Cybersecurity student focused on building projects that prove real-world risk thinking:
-             authentication, role separation, audit trails, and secure transaction flows.
-            Everything here is designed to be easy for recruiters to review.
+            <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
+              Cybersecurity student building practical projects around authentication, RBAC,
+              audit trails, and secure transaction flows. Everything here is easy to review quickly.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -95,11 +94,11 @@ export default function Page() {
               </a>
               <Link href="https://github.com/Jasmineamuchienwa" target="_blank" className="inline-flex items-center gap-2 rounded-full border px-4 py-2 hover:bg-white/60 dark:hover:bg-white/10">
                 View GitHub <ExternalLink className="h-4 w-4" />
-                </Link>
-
+              </Link>
             </div>
+
             <div className="mt-6 flex flex-wrap gap-2">
-              {skills.slice(0,8).map((s) => (<TAG key={s} text={s} />))}
+              {skills.slice(0, 8).map((s) => (<TAG key={s} text={s} />))}
             </div>
           </motion.div>
         </div>
@@ -110,7 +109,8 @@ export default function Page() {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="md:col-span-2">
             <p className="text-sm leading-7">
-              I’m a cybersecurity student focused on defense. This site is where I test ideas, learn in public, and build my understanding one project at a time. I want security to feel simple!
+              I’m a cybersecurity student. This site is where I test ideas, learn in public,
+              and build my understanding one project at a time.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((s) => (<TAG key={s} text={s} />))}
@@ -122,9 +122,9 @@ export default function Page() {
               <div>
                 <p className="font-medium">Focus areas</p>
                 <ul className="mt-2 space-y-1 text-sm list-disc list-inside opacity-90">
-                  <li>Cyber defense & incident response (student level)</li>
-                  <li>Phishing & social engineering patterns</li>
-                  <li>Nigeria/Africa tech ecosystem awareness</li>
+                  <li>Defensive security (student level)</li>
+                  <li>Secure API design and access control</li>
+                  <li>Risk thinking: threats, controls, and auditability</li>
                 </ul>
               </div>
             </div>
@@ -132,7 +132,9 @@ export default function Page() {
               <Globe2 className="h-5 w-5 text-fuchsia-600" />
               <div>
                 <p className="font-medium">Identity</p>
-                <p className="text-sm opacity-90 mt-1">Student. Building useful, ethical, and human-centered security tools.</p>
+                <p className="text-sm opacity-90 mt-1">
+                  Student. Interested in practical defensive security and clean systems design.
+                </p>
               </div>
             </div>
           </Card>
@@ -182,63 +184,54 @@ export default function Page() {
 
       {/* CASE STUDIES */}
       <Section id="case-studies" title="Case Studies" eyebrow="deep dives">
-  <div className="grid md:grid-cols-2 gap-6">
-    <Card>
-      <h3 className="text-lg font-semibold">Northbridge Secure Banking MVP — Risk-backed build</h3>
-      <p className="mt-2 text-sm opacity-90">
-        A fintech-style API designed around enterprise risk thinking: authentication, RBAC, audit logs, and transaction integrity.
-        Built to align with an Enterprise Technology Risk Assessment.
-      </p>
-      <a href="#projects" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-        See project details <ArrowRight className="h-4 w-4" />
-      </a>
-    </Card>
-
-    <Card>
-      <h3 className="text-lg font-semibold">Security UI notes — Designing for fewer mistakes</h3>
-      <p className="mt-2 text-sm opacity-90">
-        Short write-ups on how wording, friction, and feedback reduce phishing mistakes and improve user decisions in high-risk moments.
-      </p>
-      <a href="#writing" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-        See writing <ArrowRight className="h-4 w-4" />
-      </a>
-    </Card>
-  </div>
-</Section>
-
-
-      {/* WRITING */}
-      <Section id="writing" title="Writing & Notes" eyebrow="essays">
         <div className="grid md:grid-cols-2 gap-6">
           <Card>
-            <div className="flex items-start gap-3">
-              <BookOpen className="h-5 w-5 text-indigo-600" />
-              <div>
-                <p className="font-medium">On phishing patterns I see around me</p>
-                <p className="text-sm opacity-90 mt-1">Short notes on social engineering cues, context lures, and how UI/design can help users spot danger.</p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <a href="#" className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-                Read when published <ExternalLink className="h-4 w-4" />
-              </a>
-            </div>
+            <h3 className="text-lg font-semibold">Northbridge Secure Banking MVP — Risk-backed build</h3>
+            <p className="mt-2 text-sm opacity-90">
+              A fintech-style API designed around enterprise risk thinking: authentication, RBAC, audit logs, and transaction integrity.
+              Built to align with an Enterprise Technology Risk Assessment.
+            </p>
+            <a href="#projects" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
+              See project details <ArrowRight className="h-4 w-4" />
+            </a>
           </Card>
+
           <Card>
-            <div className="flex items-start gap-3">
-              <BookOpen className="h-5 w-5 text-fuchsia-600" />
-              <div>
-                <p className="font-medium">Designing Visual Security Systems</p>
-                <p className="text-sm opacity-90 mt-1">Student projects - All of my projects as a catalogue to access easily via github. .</p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <a href="#" className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-                Read when published <ExternalLink className="h-4 w-4" />
-              </a>
-            </div>
+            <h3 className="text-lg font-semibold">Notes (coming soon)</h3>
+            <p className="mt-2 text-sm opacity-90">
+              Short write-ups on what I’m learning as I build and test projects.
+            </p>
+            <a href="#writing" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
+              See writing <ArrowRight className="h-4 w-4" />
+            </a>
           </Card>
         </div>
+      </Section>
+
+      {/* WRITING */}
+      <Section id="writing" title="Writing" eyebrow="substack">
+        <Card>
+          <div className="flex items-start gap-3">
+            <BookOpen className="h-5 w-5 text-indigo-600" />
+            <div>
+              <p className="font-medium">Substack</p>
+              <p className="text-sm opacity-90 mt-1">
+                Personal writing — essays, reflections, and observations.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <a
+              href="https://substack.com/@fareedahphillips/posts"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline"
+            >
+              Read on Substack <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+        </Card>
       </Section>
 
       {/* CONTACT */}
@@ -260,7 +253,9 @@ export default function Page() {
           </Card>
           <Card className="md:col-span-2">
             <p className="text-sm font-medium mb-2">What is it for?</p>
-            <p className="text-sm opacity-90">I’m a cybersecurity student building small tools that could protect and inform people. This site is my lab, it’ll change as I learn.</p>
+            <p className="text-sm opacity-90">
+              A simple place to track my projects, case studies, and progress over time.
+            </p>
           </Card>
         </div>
       </Section>
