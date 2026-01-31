@@ -205,7 +205,7 @@ export default function Page() {
               Built to align with an Enterprise Technology Risk Assessment.
             </p>
 
-            
+            {/* ✅ Added PDF link here */}
             <div className="mt-3 flex flex-wrap items-center gap-4">
               <a
                 href="/docs/Northbridge_Risk_Assessment.pdf"
