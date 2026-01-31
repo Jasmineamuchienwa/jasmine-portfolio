@@ -1,6 +1,21 @@
 "use client";
 
-import { Github, Linkedin, Mail, ArrowRight, Shield, Sparkles, BookOpen, Cpu, Globe2, Star, ExternalLink, FolderPlus, Sun, Moon } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowRight,
+  Shield,
+  Sparkles,
+  BookOpen,
+  Cpu,
+  Globe2,
+  Star,
+  ExternalLink,
+  FolderPlus,
+  Sun,
+  Moon
+} from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { projects } from "@/data/projects";
@@ -79,8 +94,7 @@ export default function Page() {
 
             <h1 className="mt-5 text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight">
               Hi, I’m Jasmine,{" "}
-              <span className="text-fuchsia-600">Welcome</span>.{" "}
-              <span className="text-indigo-600"></span>
+              <span className="text-fuchsia-600">Welcome</span>.
             </h1>
 
             <p className="mt-4 max-w-2xl text-base sm:text-lg text-neutral-700 dark:text-neutral-300">
@@ -110,7 +124,7 @@ export default function Page() {
           <Card className="md:col-span-2">
             <p className="text-sm leading-7">
               I am a cybersecurity student learning through hands-on projects and experiments.
-                Outside of tech, I write personal pieces on Substack.
+              Outside of tech, I write personal pieces on Substack.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {skills.map((s) => (<TAG key={s} text={s} />))}
@@ -164,13 +178,12 @@ export default function Page() {
             </Card>
           ))}
 
-          {/* Placeholder for future mini projects */}
           <Card>
             <div className="flex items-start gap-3">
               <FolderPlus className="h-5 w-5 text-indigo-600" />
               <div>
                 <h3 className="text-lg font-semibold">Pending new mini-project</h3>
-                <p className="mt-1 text-sm opacity-90">Space reserved for future tools, write-ups, or experiments. </p>
+                <p className="mt-1 text-sm opacity-90">Space reserved for future tools, write-ups, or experiments.</p>
               </div>
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -191,9 +204,25 @@ export default function Page() {
               A fintech-style API designed around enterprise risk thinking: authentication, RBAC, audit logs, and transaction integrity.
               Built to align with an Enterprise Technology Risk Assessment.
             </p>
-            <a href="#projects" className="mt-3 inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline">
-              See project details <ArrowRight className="h-4 w-4" />
-            </a>
+
+            
+            <div className="mt-3 flex flex-wrap items-center gap-4">
+              <a
+                href="/docs/Northbridge_Risk_Assessment"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline"
+              >
+                View Risk Assessment (PDF) <ExternalLink className="h-4 w-4" />
+              </a>
+
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline"
+              >
+                See project details <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </Card>
 
           <Card>
