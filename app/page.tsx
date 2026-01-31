@@ -199,7 +199,7 @@ export default function Page() {
       <Section id="case-studies" title="Case Studies" eyebrow="deep dives">
         <div className="grid md:grid-cols-2 gap-6">
           <Card>
-            <h3 className="text-lg font-semibold">Northbridge Secure Banking MVP — Risk-backed build</h3>
+            <h3 className="text-lg font-semibold">Northbridge Secure Banking MVP - Risk-backed build</h3>
             <p className="mt-2 text-sm opacity-90">
               A fintech-style API designed around enterprise risk thinking: authentication, RBAC, audit logs, and transaction integrity.
               Built to align with an Enterprise Technology Risk Assessment.
