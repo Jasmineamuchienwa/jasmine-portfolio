@@ -208,7 +208,7 @@ export default function Page() {
             
             <div className="mt-3 flex flex-wrap items-center gap-4">
               <a
-                href="/docs/Northbridge_Risk_Assessment"
+                href="/docs/Northbridge_Risk_Assessment.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-fuchsia-700 dark:text-fuchsia-300 hover:underline"
